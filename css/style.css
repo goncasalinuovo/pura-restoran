@@ -339,11 +339,7 @@ footer .footer-nav{
     .menu-flex{
         padding-bottom: 0;
         }
-    .parallax-nav{
-        background-size: cover;
-        height: 100vh;
-        width: 100%;
-}
+
     /* header nav ul {
         flex-direction: row;
         justify-content: space-evenly;
@@ -358,6 +354,10 @@ footer .footer-nav{
     ul{
         padding-bottom: 1rem;
     } */
+
+    .parallax-nav{
+        display: none;
+    }
     .nav-div{
         display: none;
     }
