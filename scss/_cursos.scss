@@ -1,0 +1,108 @@
+
+            .main-cursos{
+                #saber{
+                    .cursos-grid{
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                }
+                .saber-mas{
+                    a{
+                        &:hover{
+                            color: $blanco;
+                        }
+                    }
+                    
+                }
+                .div-saber{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .formulario {
+                margin: 2rem;
+                padding: 2rem;
+                border: 2rem;
+                border-radius: 3rem;
+                background-image: linear-gradient(to bottom, $verde-claro, $marron-pastel);
+            }
+            .div-form-img{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+            }
+            .aside-class{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            input, select{
+                width: 85%;
+                height: 2rem;
+                padding: 0.3rem;
+                margin: 0.5rem 2rem 0.5rem 2rem;
+                border-radius: 1rem;
+            }
+            label{
+                text-align: left;
+                padding: 1.7rem 0.5rem 0 1.2rem;
+                margin: 0.5rem 2rem 0.5rem 1rem;
+            }
+            .h2-form{
+                text-align: center;
+            }
+            .btn-enviar {
+                padding-left: 2rem;
+                padding-right: 2rem;
+                transition: all 0.5s;
+                &:hover{
+                    background-color: $azul-claro;
+                }
+            }
+            .img-cursos{
+                width: 8rem;
+                height: 10rem;
+            }
+            .p-cursos{
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+            
+            .saber-mas {
+                width: 6rem;
+                height: 2rem;
+                text-align: center;
+                // border: solid 1px grey;
+                border-radius: 3rem;
+                padding-top: 2px;
+                background-color: $verde-claro;
+                transition: width 0.3s, background-color 1s;
+                &:hover{
+                    width: 6.5rem;
+                    background-color: $azul-claro;
+                }
+            }
+            
+            .h-intro{
+                padding-left: 5.5rem;
+                padding-bottom: 0;
+            }
+            .p-padding, .v-padding{
+                padding-top: 0.5rem;
+                padding-bottom: 1.5rem;
+                padding-left: 5rem;
+                padding-right: 5rem;
+            }
+            .h-padding{
+                text-align: center;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                font-size: 1.3rem;
+                color: $azul-claro;
+            }
+            .v-padding{
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }

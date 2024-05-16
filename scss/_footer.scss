@@ -1,0 +1,31 @@
+
+            a {
+                text-decoration: none;
+                color: $negro;
+            }
+            footer{
+                padding-top: 0.3rem;
+                background-color: $rosa-pastel;
+                .footer-nav{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+                nav{
+                    a{
+                        svg:hover{
+                            color: $blanco;
+                        }
+                    }
+                }
+            }
+            svg{
+                width: 2rem;
+                height: 3rem;
+            }
+            .copyright{
+                padding: 0.3rem;
+                color: $blanco-sucio;
+                background-color: $gris-claro;
+            }

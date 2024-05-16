@@ -1,0 +1,38 @@
+
+        .parallax-menu {
+            background-image: url("../assets/parallax-menu.jpeg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 35vh;
+        }
+        .div-menu{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        
+            margin-left: 3rem;
+            margin-right: 3rem;
+            background-color: $verde-claro;
+            border-radius: 5rem;
+            box-shadow: 7px 8px 55px -20px rgba(0,0,0,0.7);
+            -webkit-box-shadow: 7px 8px 55px -20px rgba(0,0,0,0.7);
+            -moz-box-shadow: 7px 8px 55px -20px rgba(0,0,0,0.7);
+        }
+        .menu-flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-h3{
+            text-align: center;
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
+        }
+        .menu-flex{
+        padding: 1rem 3rem 1rem 3rem;
+        }
+        #main-menu{
+            padding-bottom: 3rem;
+        }
