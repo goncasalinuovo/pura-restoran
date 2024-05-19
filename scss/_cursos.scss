@@ -4,9 +4,22 @@
                     .cursos-grid{
                         display: grid;
                         grid-template-columns: repeat(3, 1fr);
+                        @include mobile {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        @include tablet{
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                        }
                     }
                 }
                 .saber-mas{
+                    @include tablet{
+                        height: 1.8rem;
+                    }
                     a{
                         &:hover{
                             color: $blanco;
@@ -31,12 +44,19 @@
             .div-form-img{
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
+                    @include mobile{
+                        grid-template-columns: 1fr;
+                    }
             }
             .aside-class{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                @include mobile {
+                    flex-direction: row;
+                }
             }
             input, select{
                 width: 85%;
@@ -64,6 +84,14 @@
             .img-cursos{
                 width: 8rem;
                 height: 10rem;
+                @include mobile {
+                    width: 7rem;
+                    height: 9rem;
+                }
+                @include tablet{
+                    width: 7rem;
+                    height: 9rem;
+                }
             }
             .p-cursos{
                 text-align: center;
@@ -74,7 +102,6 @@
                 width: 6rem;
                 height: 2rem;
                 text-align: center;
-                // border: solid 1px grey;
                 border-radius: 3rem;
                 padding-top: 2px;
                 background-color: $verde-claro;

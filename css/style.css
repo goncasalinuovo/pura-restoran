@@ -17,6 +17,12 @@ header nav ul {
   align-items: center;
   width: 50%;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav ul {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+}
 header nav ul li {
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
@@ -25,6 +31,14 @@ header nav ul li {
   font-variation-settings: "wdth" 100;
   list-style: none;
   padding-top: 2.5rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 header nav ul li a:hover {
   color: white;
@@ -38,6 +52,11 @@ header .parallax-nav {
   height: 100vh;
   width: 100%;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .parallax-nav {
+    display: none;
+  }
+}
 header .container-fluid .navbar-nav {
   display: flex;
   flex-direction: row;
@@ -45,10 +64,46 @@ header .container-fluid .navbar-nav {
   align-items: center;
   width: 100%;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .container-fluid .navbar-nav {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .nav-div {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .navbar-toggler {
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+}
 
 .main-cursos #saber .cursos-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .main-cursos #saber .cursos-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-cursos #saber .cursos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-cursos .saber-mas {
+    height: 1.8rem;
+  }
 }
 .main-cursos .saber-mas a:hover {
   color: white;
@@ -72,12 +127,22 @@ header .container-fluid .navbar-nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .div-form-img {
+    grid-template-columns: 1fr;
+  }
+}
 
 .aside-class {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .aside-class {
+    flex-direction: row;
+  }
 }
 
 input, select {
@@ -110,6 +175,18 @@ label {
 .img-cursos {
   width: 8rem;
   height: 10rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .img-cursos {
+    width: 7rem;
+    height: 9rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .img-cursos {
+    width: 7rem;
+    height: 9rem;
+  }
 }
 
 .p-cursos {
@@ -164,6 +241,11 @@ label {
   background-size: cover;
   height: 35vh;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .parallax-menu {
+    background-attachment: local;
+  }
+}
 
 .div-menu {
   display: grid;
@@ -176,12 +258,34 @@ label {
   -webkit-box-shadow: 7px 8px 55px -20px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 7px 8px 55px -20px rgba(0, 0, 0, 0.7);
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .div-menu {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .div-menu {
+    grid-template-columns: 1fr;
+  }
+}
 
 .menu-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .menu-flex {
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu-flex {
+    padding-bottom: 0;
+  }
 }
 
 .menu-h3 {
@@ -203,6 +307,16 @@ label {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .contact-div {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contact-div {
+    grid-template-columns: 1fr;
+  }
+}
 .contact-div .contact-flex {
   display: flex;
   flex-direction: column;
@@ -213,10 +327,31 @@ label {
 iframe {
   padding: 3rem;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  iframe {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  iframe {
+    width: 100%;
+  }
+}
 
 .img-ubi {
   width: 6rem;
   height: 8rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .p-contacto {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .p-contacto {
+    text-align: center;
+  }
 }
 
 .img-staff {
@@ -292,6 +427,22 @@ html body .flex-index {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body .flex-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body .flex-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 html body .p-index {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -301,8 +452,28 @@ html body .p-index {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body .p-index {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body .p-index {
+    text-align: center;
+  }
+}
 html body .imagen-portada {
   width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body .imagen-portada {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body .imagen-portada {
+    width: 70%;
+  }
 }
 html body main {
   background-color: #e3e8c0;
@@ -327,18 +498,23 @@ html body p {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
 }
 html body .logo {
   width: 6rem;
   height: 6rem;
   padding: 0.3rem;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body .logo {
+    width: 4.5rem;
+    height: 4.5rem;
+    padding: 0.1rem;
+  }
+}
 html body p, html body h2, html body img {
   padding: 2rem 1rem 2rem 1rem;
-}
-html body p {
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
 }
 html body h2 {
   font-size: 1.5rem;
@@ -368,152 +544,4 @@ html body .btn-wpp {
 }
 html body .btn-wpp svg:hover {
   color: black;
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  html body .div-form-img {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  html body .aside-class {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  html body .img-cursos {
-    width: 7rem;
-    height: 9rem;
-  }
-  html body .logo {
-    width: 4.5rem;
-    height: 4.5rem;
-    padding: 0.1rem;
-  }
-  html body .saber-mas {
-    height: 2rem;
-  }
-  html body .main-cursos #saber .cursos-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  html body .flex-index {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  html body .p-index {
-    text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  html body .imagen-portada {
-    width: 90%;
-  }
-  html body .div-menu {
-    grid-template-columns: 1fr;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  html body .menu-flex {
-    padding-bottom: 0;
-  }
-  html body .parallax-nav {
-    display: none;
-  }
-  html body .nav-div {
-    display: none;
-  }
-  html body .flex-index {
-    flex-direction: column;
-  }
-  html body .contact-div {
-    grid-template-columns: 1fr;
-  }
-  html body iframe {
-    width: 100%;
-  }
-  html body .p-contacto {
-    text-align: center;
-  }
-  html body .parallax-menu {
-    background-attachment: local;
-  }
-  html body .navbar-toggler {
-    width: 3.5rem;
-    height: 2.5rem;
-  }
-  html body header .navbar .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  html body .aside-class {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  html body .img-cursos {
-    width: 7rem;
-    height: 9rem;
-  }
-  html body .saber-mas {
-    height: 1.8rem;
-  }
-  html body .main-cursos #saber .cursos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  html body .flex-index {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  html body .p-index {
-    text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  html body .imagen-portada {
-    width: 70%;
-  }
-  html body .div-menu {
-    grid-template-columns: 1fr;
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-  html body .menu-flex {
-    padding-bottom: 0;
-  }
-  html body header nav ul {
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-  }
-  html body header nav ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  html body ul {
-    padding-bottom: 1rem;
-  }
-  html body .contact-div {
-    grid-template-columns: 1fr;
-  }
-  html body iframe {
-    width: 100%;
-  }
-  html body .p-contacto {
-    text-align: center;
-  }
 }/*# sourceMappingURL=style.css.map */

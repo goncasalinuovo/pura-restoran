@@ -11,6 +11,10 @@ header{
             justify-content: space-evenly;
             align-items: center;
             width: 50%;
+            @include tablet{
+                width: 100%;
+                padding-bottom: 1rem;
+            }
             li {
                 font-family: $font-1;
                 font-optical-sizing: auto;
@@ -20,6 +24,12 @@ header{
                 "wdth" 100;
                 list-style: none;
                 padding-top: 2.5rem;
+                @include tablet{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
                 a{
                     &:hover{
                         color: $blanco;
@@ -37,6 +47,9 @@ header{
         background-size: cover;
         height: 100vh;
         width: 100%;
+        @include mobile{
+            display: none;
+        }
     }
     .container-fluid{
         .navbar-nav{
@@ -45,6 +58,21 @@ header{
             justify-content: space-evenly;
             align-items: center;
             width: 100%;
+            @include mobile{
+                flex-direction: column;
+                justify-content: space-around;
+            }
+        }
+    }
+    .nav-div{
+        @include mobile{
+            display: none;
+        }
+    }
+    .navbar-toggler{
+        @include mobile{
+            width: 3.5rem;
+            height: 2.5rem;
         }
     }
     

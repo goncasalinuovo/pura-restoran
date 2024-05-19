@@ -6,6 +6,9 @@
             background-repeat: no-repeat;
             background-size: cover;
             height: 35vh;
+            @include mobile{
+                background-attachment: local;
+            }
         }
         .div-menu{
             display: grid;
@@ -18,12 +21,26 @@
             box-shadow: 7px 8px 55px -20px rgba(0,0,0,0.7);
             -webkit-box-shadow: 7px 8px 55px -20px rgba(0,0,0,0.7);
             -moz-box-shadow: 7px 8px 55px -20px rgba(0,0,0,0.7);
+            @include mobile {
+                grid-template-columns: 1fr;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            @include tablet{
+                grid-template-columns: 1fr;
+            }
         }
         .menu-flex{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            @include mobile{
+                padding-bottom: 0;
+            }
+            @include tablet{
+                padding-bottom: 0;
+            }
         }
         .menu-h3{
             text-align: center;

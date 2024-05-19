@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import 'mediaqueris';
 @import 'colors';
 @import 'fonts';
 @import 'header';
@@ -27,6 +28,18 @@ html {
         .flex-index{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
         }
         .p-index{
             padding-left: 2rem;
@@ -36,10 +49,22 @@ html {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @include mobile {
+                text-align: center;
+            }
+            @include tablet{
+                text-align: center;
+            }
         }
         
         .imagen-portada {
             width: 100%;
+            @include mobile{
+                width: 90%;
+            }
+            @include tablet{
+                width: 70%;
+            }
         }
         
         main {
@@ -65,18 +90,21 @@ html {
             font-family: $font-2;
             font-weight: 400;
             font-style: normal;
+            padding-top: 0.1rem;
+            padding-bottom: 0.1rem;
         }
         .logo {
             width: 6rem;
             height: 6rem;
             padding: 0.3rem;
+            @include mobile {
+                width: 4.5rem;
+                height: 4.5rem;
+                padding: 0.1rem;
+            }
         }
         p, h2, img {
             padding: 2rem 1rem 2rem 1rem;
-        }
-        p {
-            padding-top: 0.1rem;
-            padding-bottom: 0.1rem;
         }
         h2{
             font-size: 1.5rem;
@@ -109,171 +137,6 @@ html {
                 }
             }
             
-        }
-        @media screen and (min-width: 320px) and (max-width: 767px) {
-            .div-form-img {
-                display: grid;
-                grid-template-columns: 1fr;
-            }
-            .aside-class {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-            }
-            .img-cursos {
-                width: 7rem;
-                height: 9rem;
-            }
-            .logo {
-                width: 4.5rem;
-                height: 4.5rem;
-                padding: 0.1rem;
-            }
-            .saber-mas {
-                height: 2rem;
-            }
-            .main-cursos {
-                #saber {
-                    .cursos-grid {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                }
-            }
-            .flex-index{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .p-index {
-                text-align: center;
-                padding-left: 2rem;
-                padding-right: 2rem;
-            }
-            .imagen-portada {
-                width: 90%;
-            }
-            .div-menu {
-                grid-template-columns: 1fr;
-                margin-left: 0;
-                margin-right: 0;
-            }
-            .menu-flex {
-                padding-bottom: 0;
-            }
-            .parallax-nav {
-                display: none;
-            }
-            .nav-div {
-                display: none;
-            }
-            .flex-index {
-                flex-direction: column;
-            }
-            .contact-div {
-                grid-template-columns: 1fr;
-            }
-            iframe {
-                width: 100%;
-            }
-            .p-contacto {
-                text-align: center;
-            }
-            .parallax-menu {
-                background-attachment: local;
-            }
-            .navbar-toggler {
-                width: 3.5rem;
-                height: 2.5rem;
-            }
-            header{
-                .navbar{
-                    .navbar-nav{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-around;
-                        align-items: center;
-                    }
-                }
-            }
-
-        }
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-            .aside-class {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .img-cursos {
-                width: 7rem;
-                height: 9rem;
-            }
-            .saber-mas {
-                height: 1.8rem;
-            }
-            .main-cursos {
-                #saber {
-                    .cursos-grid {
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                    }
-                }
-            }
-            .flex-index{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .p-index {
-                text-align: center;
-                padding-left: 2rem;
-                padding-right: 2rem;
-            }
-            .imagen-portada {
-                width: 70%;
-            }
-            .div-menu {
-                grid-template-columns: 1fr;
-                margin-left: 3rem;
-                margin-right: 3rem;
-            }
-            .menu-flex {
-                padding-bottom: 0;
-            }
-            header {
-                nav {
-                    ul {
-                        flex-direction: row;
-                        justify-content: space-evenly;
-                        align-items: center;
-                        width: 100%;
-                        li{
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                    }
-                }
-            }
-            ul {
-                padding-bottom: 1rem;
-            }
-            .contact-div {
-                grid-template-columns: 1fr;
-            }
-            iframe {
-                width: 100%;
-            }
-            .p-contacto {
-                text-align: center;
-            }
         }
     }
 }
