@@ -385,6 +385,7 @@ a {
 footer {
   padding-top: 0.3rem;
   background-color: #e1cbae;
+  margin-top: auto;
 }
 footer .footer-nav {
   display: flex;
@@ -419,9 +420,9 @@ html {
 }
 html body {
   overflow-x: hidden;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
 }
 html body .flex-index {
   display: grid;
@@ -527,6 +528,14 @@ html body h2 {
   font-display: swap;
 }
 html body h3 {
+  font-size: 1.2rem;
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+}
+html body .h3-footer {
   font-size: 0.7rem;
   font-family: "Noto Sans", sans-serif;
 }
